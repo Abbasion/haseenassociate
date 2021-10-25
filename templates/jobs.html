@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="back-body">
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h1 style="color: #F30505; "><b>Employment Application</b></h1>
+            <p class="blue-text">Fill the form below accurately <br>indicating your potentials and suitability to job applying for.</p>
+            <div class="card">
+                <h5 class="text-center mb-4 gg">HASEEN ASSOCIATES</h5>
+                <form class="form-card" onsubmit="event.preventDefault()">
+                    <h2 class="gg"><b>Personal Info:</b></h2>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email Address<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="validate(3)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" onblur="validate(4)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Date Of Birth<span class="text-danger"> *</span></label> <input type="date" data-date-inline-picker="true" /> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Cell number<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" onblur="validate(4)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Address<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Address line 1" onblur="validate(1)">
+                        <input type="text" id="fname" name="fname" placeholder="Address line 2" onblur="validate(1)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">City<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="city" onblur="validate(2)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">State / Province<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname"  onblur="validate(1)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Zip Code<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname"  onblur="validate(2)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">OTHERS<span class="text-danger"> *</span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Upload Resume<span class="text-danger"> *</span></label> <input type="file" id="myfile" name="myfile"> </div>
+                    </div>
+                    <h2 class="gg"><b>Job Skill & Training:</b></h2>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Describe your skills<span class="text-danger"> *</span></label><textarea name="message" placeholder="type here" rows="10" cols="30"></textarea> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Training or Certifications<span class="text-danger"> *</span></label> <textarea name="message" placeholder="type here" rows="10" cols="30"></textarea> </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">SUBMIT APPLICATION</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- script -->
+<script type="text/javascript">
+    function validate(val) {
+v1 = document.getElementById("fname");
+v2 = document.getElementById("lname");
+v3 = document.getElementById("email");
+v4 = document.getElementById("mob");
+v5 = document.getElementById("job");
+v6 = document.getElementById("ans");
+
+flag1 = true;
+flag2 = true;
+flag3 = true;
+flag4 = true;
+flag5 = true;
+flag6 = true;
+
+if(val>=1 || val==0) {
+if(v1.value == "") {
+v1.style.borderColor = "red";
+flag1 = false;
+}
+else {
+v1.style.borderColor = "green";
+flag1 = true;
+}
+}
+
+if(val>=2 || val==0) {
+if(v2.value == "") {
+v2.style.borderColor = "red";
+flag2 = false;
+}
+else {
+v2.style.borderColor = "green";
+flag2 = true;
+}
+}
+if(val>=3 || val==0) {
+if(v3.value == "") {
+v3.style.borderColor = "red";
+flag3 = false;
+}
+else {
+v3.style.borderColor = "green";
+flag3 = true;
+}
+}
+if(val>=4 || val==0) {
+if(v4.value == "") {
+v4.style.borderColor = "red";
+flag4 = false;
+}
+else {
+v4.style.borderColor = "green";
+flag4 = true;
+}
+}
+if(val>=5 || val==0) {
+if(v5.value == "") {
+v5.style.borderColor = "red";
+flag5 = false;
+}
+else {
+v5.style.borderColor = "green";
+flag5 = true;
+}
+}
+if(val>=6 || val==0) {
+if(v6.value == "") {
+v6.style.borderColor = "red";
+flag6 = false;
+}
+else {
+v6.style.borderColor = "green";
+flag6 = true;
+}
+}
+
+flag = flag1 && flag2 && flag3 && flag4 && flag5 && flag6;
+
+return flag;
+}
+</script>
+<!-- script khtm -->
+</div>
+
+
+{% endblock %}

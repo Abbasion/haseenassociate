@@ -1,0 +1,14 @@
+appdirs==1.4.4
+asgiref==3.3.1
+distlib==0.3.1
+Django==3.1.7
+djangorestframework==3.12.4
+et-xmlfile==1.0.1
+filelock==3.0.12
+openpyxl==3.0.7
+Pillow==8.1.2
+pytz==2021.1
+six==1.15.0
+sqlparse==0.4.1
+view==0.1
+virtualenv==20.4.2

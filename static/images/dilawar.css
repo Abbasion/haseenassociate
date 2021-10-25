@@ -1,0 +1,49 @@
+body{
+	background-color: #f5f5f5;
+}
+#logo{
+	height:85%;
+	width: 80%;
+}
+#marque{
+	color: #08ff3d;
+	font-size: 150%;
+
+}
+#location{
+	margin-top: 10%;
+	color: #ff0887;
+}
+#callus{
+	margin-top: 7%;
+	color: #ff0887;
+
+}
+#heading{
+	
+	
+}
+#pic{
+	height: 100%;	
+}
+#peragraph{
+	margin-top: 10%;
+}
+#slider{
+	color: green;
+}
+.jobs{
+	text-align: center;
+	color: #8c03fc;
+	margin-top: 5%;
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
+#founder{
+	/*height: 0%;
+	width: 100%;*/
+	align-items: right;
+	padding-left: 30%;
+	margin-top: 5%;
+}

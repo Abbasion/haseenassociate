@@ -1,0 +1,28 @@
+.heading2{
+	font-weight: bold;
+
+}
+.underline{
+	width: 154px;
+	border: 1px solid black;
+	margin-top: -10px;
+}
+.underline1{
+	width: 116px;
+	border: 1px solid black;
+	margin-top: -10px;
+}
+.underline2{
+	width: 158px;
+	border: 1px solid black;
+	margin-top: -10px;
+}
+.footercol3{
+	list-style: none;
+}
+.footercol4{
+	list-style-type: none;
+}
+.footer1{
+	background-color: rgb(30, 45, 69);
+}
